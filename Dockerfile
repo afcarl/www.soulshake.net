@@ -1,5 +1,4 @@
-FROM scratch
+FROM nginx
 MAINTAINER AJ Bowen <aj@soulshake.net>
 
-COPY ./src /src
-VOLUME ["/src"]
+COPY ./src /data/www
