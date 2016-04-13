@@ -1,0 +1,155 @@
+/* reset */
+*{margin:0px;padding:10px;border:none;line-height:inherit;font-size:100%;font-weight:inherit;font-style:inherit;text-decoration:inherit;color:inherit;list-style-type:none;text-align:inherit;}
+
+* + * {
+    margin-top: 1.25em;
+}
+
+body {
+    color: #C60;
+    background: #100800;
+    font-family: monospace;
+    padding: 2em;
+    font-weight: bold;
+    font-size: 110%;
+    line-height: 1em;
+    margin: 0em;
+    text-transform: uppercase;
+}
+
+h1 {
+    border-bottom: 1em solid;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+h1, h2 {
+    border-left: 0.75em solid;
+    padding-left: 0.75em;
+}
+
+h2 {
+    border-right: 0.75em solid;
+    padding-right: 0.75em;
+    display: inline-block;
+}
+
+li {
+    list-style-position: inside;
+  margin: 0;
+  padding: 0.2em;
+
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+
+ul, ol {
+    -moz-column-width: 20em;
+    -webkit-colmun-width: 20em;
+    column-width: 20em;
+}
+
+@media screen and (min-width: 40em) {
+    div {
+        overflow: hidden;
+    }
+    #ingredients, #steps {
+        float: left;
+        width: 50%;
+    }
+}
+
+img {
+    max-width: 100%;
+    max-height: 30em;
+    margin: auto;
+    display: block;
+    border-radius: 2em;
+}
+/*img:first-child {
+    width: 100%;
+    position: fixed;
+    left: 0em;
+    top: 0em;
+    z-index: -1;
+    opacity: 0.3;
+}*/
+a {
+    padding: 1.4em 0.65em;
+    border: 0.1em solid;
+    display: block;
+    text-align: center;
+    clear: both;
+}
+
+#steps li {
+    padding: 1.5em;
+    border-left: 0.75em solid;
+}
+
+a:hover {
+    background: #F80;
+    color: #210;
+}
+
+#steps li:hover, h1, h2 {
+    color: #00b300;
+}
+
+input {
+    background: transparent;
+    border-bottom: 0.1em solid;
+    margin-bottom: 1.4em;
+    width: 4em;
+    text-align: right;
+    color: #cc00ff;
+}
+
+input[disabled=disabled], input[readonly=readonly] {
+    color: #ff66ff;
+}
+
+@media screen {
+    #steps:before {
+        display: block;
+        text-align: center;
+        content:"[Hover or tap to highlight current step]";
+        margin-bottom: 1.5em;
+    }
+}
+
+@media print {
+    body {
+        font-family: courier new, courier;
+        font-weight: normal;
+        color: #000;
+        background: #fff;
+    }
+
+    img, a, #converter {
+        display: none;
+    }
+    
+    .linklist a {
+        display: inline;
+        border: none;
+    }
+    
+    #steps li:hover, h1, h2, input, input[disabled=disabled], input[readonly=readonly] {
+        color: #000;
+    }
+    
+    #steps li {
+        padding: 0em;
+        border: none;
+    }
+    
+    h1, h2 {
+        border: none;
+        padding: 0em;
+        text-decoration: underline;
+    }
+}
