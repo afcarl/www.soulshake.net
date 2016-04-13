@@ -1,4 +1,5 @@
 FROM scratch
 MAINTAINER AJ Bowen <aj@soulshake.net>
 
-VOLUME ./src /src
+COPY ./src /src
+VOLUME ["/src"]
