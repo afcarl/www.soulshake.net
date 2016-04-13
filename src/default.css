@@ -6,15 +6,19 @@
 }
 
 body {
-    color: #C60;
-    background: #100800;
+    color: rgb(204, 102, 0);
     font-family: monospace;
-    padding: 2em;
     font-weight: bold;
     font-size: 110%;
     line-height: 1em;
+    background: rgb(16, 8, 0);
+    padding: 1em;
     margin: 0em;
-    text-transform: uppercase;
+}
+
+.terminal {
+    color: rgb(255, 255, 102);
+    padding: 1em;
 }
 
 h1 {
