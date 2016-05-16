@@ -8,12 +8,12 @@
 body {
     color: rgb(204, 102, 0);
     font-family: monospace;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 110%;
     line-height: 1em;
     background: rgb(16, 8, 0);
-    padding: 1em;
-    margin: 0em;
+    padding: 2em;
+    margin: 2em;
 }
 
 .terminal {
@@ -21,22 +21,18 @@ body {
     padding: 1em;
 }
 
+.linklist {
+  display: -webkit-box
+
+}
+
+
 h1 {
     border-bottom: 1em solid;
     padding-bottom: 0.25em;
     margin-bottom: 0.25em;
 }
 
-h1, h2 {
-    border-left: 0.75em solid;
-    padding-left: 0.75em;
-}
-
-h2 {
-    border-right: 0.75em solid;
-    padding-right: 0.75em;
-    display: inline-block;
-}
 
 li {
     list-style-position: inside;
@@ -54,6 +50,7 @@ ul, ol {
     -moz-column-width: 20em;
     -webkit-colmun-width: 20em;
     column-width: 20em;
+    display: table;
 }
 
 @media screen and (min-width: 40em) {
@@ -157,3 +154,4 @@ input[disabled=disabled], input[readonly=readonly] {
         text-decoration: underline;
     }
 }
+
