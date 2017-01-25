@@ -4,7 +4,7 @@ services:
     build: .
     labels:
       - convox.port.443.protocol=https
-    command: bin/hugo
+    command: bin/web
     ports:
       - "80:80"
       - "443:443"
