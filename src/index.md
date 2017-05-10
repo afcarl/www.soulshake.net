@@ -13,8 +13,8 @@ If I could snap my fingers and find myself in a perfect role, it would probably 
 
 Right now the tools\* I'm equipped with are:
 
-- Python, bash
-- a little C, C++ and Golang
+- Golang, Python, bash
+- a little C, C++ and Ruby
 - DNS, Docker, see linkedin profile
 - an endlessly stubborn personality when faced with a problem or a mystery, whether it's a complicated-ass bug that no one else will look into or somebody's long-lost best friend from 6th grade
 - near-native fluency in French, and caveperson-level Russian, German, Spanish
